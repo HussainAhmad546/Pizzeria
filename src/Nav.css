@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-nav {
+  background-color: black;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 55px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.nav-toggle-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-toggle-icon:before,
+.nav-toggle-icon:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-toggle-icon:before {
+  top: -8px;
+}
+
+.nav-toggle-icon:after {
+  bottom: -8px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.nav-menu li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+  color: #fca311;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    /* margin-left: auto; */
+    margin-left: 250px;
+    margin-right: 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.open {
+    transform: translateX(0%);
+  }
+
+  .nav-menu li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .nav-menu.open li {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  /* Hamburger Menu Design */
+  .nav-toggle-icon,
+  .nav-toggle-icon:before,
+  .nav-toggle-icon:after {
+    background-color: #fff;
+  }
+
+  .nav-toggle-icon:before,
+  .nav-toggle-icon:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-toggle.open .nav-toggle-icon {
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle.open .nav-toggle-icon:before {
+    transform: rotate(-45deg) translateX(-6px);
+    top: 0;
+  }
+
+  .nav-toggle.open .nav-toggle-icon:after {
+    transform: rotate(45deg) translateX(-6px);
+    bottom: 0;
+  }
+}

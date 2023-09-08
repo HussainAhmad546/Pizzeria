@@ -1,0 +1,244 @@
+   .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url("../public/images/toggle.png"); /* Replace with the path to your toggle icon image */
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s ease;
+  }
+  
+  .password-toggle-icon.open {
+    background-image: url("../public/images/opentoggle.png"); /* Replace with the path to your toggle icon image when password is visible/open */
+  }
+  
+  .password-toggle-icon.closed {
+    background-image: url("https://www.outsystems.com/Forge_BL/rest/ComponentThumbnail/GetURL_ComponentThumbnail?ProjectImageId=35279"); /* Replace with the path to your toggle icon image when password is hidden/closed */
+  }
+
+  /* RegisterScreen CSS */
+  .authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+  
+  .authentication-form {
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .primary-button {
+    width: 100%;
+  }
+  
+  .anchor {
+    display: block;
+    text-align: center;
+  }
+  
+  .primary-button {
+    width: 100%;
+    background-color: #1890ff; /* Set the background color */
+    border-color: #1890ff; /* Set the border color */
+    color: #fff; /* Set the text color */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+  
+    /* Add hover effect */
+    &:hover {
+      background-color: white;
+      border-color: black;
+    }
+  
+    /* Add focus effect */
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    }
+  }
+  
+
+  /* aboutscreen */
+
+  .about-container {
+    padding: 20px;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .about-section {
+    margin-bottom: 40px;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .about-section p {
+    margin-bottom: 8px;
+  }
+  
+  .success-story {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .success-story img {
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+  }
+  
+  .success-story-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+  }
+  
+  .testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .testimonial blockquote {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  
+  .testimonial cite {
+    font-weight: bold;
+  }
+
+
+
+  /* contact page */
+
+  .contact-container {
+    padding: 20px;
+  }
+  
+  .contact-container h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    /* padding: 8px 16px; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* AdminScreen */
+
+.admin-container {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+table {
+  width:100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4285f4;
+  /* background-color: red; */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
+
+  

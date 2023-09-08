@@ -1,0 +1,131 @@
+/* .home-container {
+    padding: 1px;
+  } */
+  
+  .hero-section {
+    background-image: url('../public/images/pizza6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 16px;
+    color:black
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .hero-button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    /* padding: 12px 24px; */
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .feature-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .feature-card {
+    text-align: center;
+  }
+  
+  .feature-card img {
+    width: 220px;
+    height: 120px;
+    margin-bottom: 16px;
+  }
+
+  .order-button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    /* padding: 12px 24px; */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+
+
+
+
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 0 0 30%;
+    max-width: 30%;
+    text-align: left;
+  }
+
+  .footer-section ul li{
+    margin-bottom: 5px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+
+
+  .footer-section p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
+    margin-top: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  .social-icons > * {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-section {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
